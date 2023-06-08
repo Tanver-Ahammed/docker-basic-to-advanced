@@ -1,0 +1,20 @@
+docker -v
+docker pull hello-world
+docker run hello-world
+docker images
+docker search mysql
+docker ps
+docker ps -all
+docker run --name javaContainer -d 71260f256d19
+docker run --name javaContainer1 -it -d 71260f256d19
+docker exec -it e06bd63d788d jshell
+docker run -it --name pythonContainer -d python
+docker exec -it pythonContainer python3
+docker run --name tanverUbuntu -it -d ubuntu
+docker exec -it tanverUbuntu sh
+docker run -it --name tanverMysql -e MYSQL_ROOT_PASSWORD=12345 -d mysql
+docker exec -it tanverMysql sh
+docker run --name nginxServer -d -p 8080:80 f9c14fe76d50
+docker run --name apachaeServer -d -p 8081:80 httpd
+docker restart tanverUbuntu
+docker stop tanverUbuntu
